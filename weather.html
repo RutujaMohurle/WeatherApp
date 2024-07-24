@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body onload="getData()">
+    <div class="box">
+        <input type="text"  onchange="getData()" id="search" value="Mumbai">
+        <div>
+            <h1 id="temp">14<sup>o</sup></h1>
+            <p style="text-align: center;font-size: 30px;color: white;">Celcius</p>
+            <p class="data">Wind Speed:-<span id="ws">20</span></p>
+            <p class="data">Humidity:-<span id="hmdty">20</span></p>
+
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <img width="230px" src="https://img.freepik.com/premium-vector/clouds-sun-cartoon-white-background-vector_566661-19137.jpg?w=2000" alt="" srcset="">
+        </div>
+    </div>
+    
+    <script src="weather.js"></script>
+</body>
+</html>
